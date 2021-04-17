@@ -31,11 +31,4 @@ public class HomeServlet extends HttpServlet {
         }
         return products;
     }
-    private void insertProduct() {
-
-//        for (int i = 0; i < 10; i++) {
-//            ProductEntity p = new ProductEntity("Iphone "+i, 300+i*100, 10, 1);
-//            dao.insertProduct(p);
-//        }
-    }
 }
