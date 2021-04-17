@@ -17,7 +17,26 @@
 
 <div class="w3-container">
 
-    aaaaaaaa
+    <table class="w3-table w3-striped">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th><a href="create-product">Create new</a></th>
+        </tr>
+        <c:forEach var="p" items="${requestScope.products}">
+            <tr>
+                <td>${p.id}</td>
+                <td>${p.name}</td>
+                <td>${p.brand}</td>
+                <td>${p.price}</td>
+                <td>${p.description}</td>
+            </tr>
+        </c:forEach>
+
+    </table>
 </div>
 
 </body>
